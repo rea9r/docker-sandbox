@@ -14,4 +14,5 @@ services:
     container_name: slave01
     image: jenkinsci/ssh-slave
     environment:
+      # get key from jenkins/jenkins_home/.ssh/id_rsa.pub
       - JENKINS_SLAVE_SSH_PUBKEY=ssh-rsa AAAA...
